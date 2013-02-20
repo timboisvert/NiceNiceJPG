@@ -1,0 +1,74 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+h1 {
+	font-family: "cubano",sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 190px;
+	line-height: 160px;
+	margin: 0px;
+	color: #ec008c;
+	margin-left: 20px;
+}
+
+body {
+	margin: 0px;
+	background-color: #333;
+	font-family: "helvetica",sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+.top {
+	width: 100%;
+	height: 500px;
+	background-color: yellow;
+	border-bottom: 3px solid #d7dbdc;
+}
+
+.bottom {
+	padding: 19px 29px 29px;
+	margin: 0px auto 20px;
+	width: 1100px;
+}
+
+.bottom .header {
+	color: #eee;
+	margin-top: 20px;
+	font-size: 35px;
+}
+
+.bottom .examples {
+	color: #eee;
+	margin-top: 20px;
+	font-size: 70px;
+	margin-bottom: 10px;
+}
+
+.bottom .example {
+	background-color: #00aeef;
+	color: #eee;
+	margin-bottom: 10px;	
+}
+
+.bottom .example .header {
+	font-size: 42px;
+	padding: 10px 10px 5px 10px;
+}
+
+.bottom .example .description {
+	font-size: 21px;
+	padding: 0px 10px 10px 10px;
+}
