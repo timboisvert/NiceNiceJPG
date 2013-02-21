@@ -20,7 +20,6 @@ body {
 .top {
 	width: 100%;
 	height: 500px;
-	background-color: yellow;
 	border-bottom: 3px solid #d7dbdc;
 }
 
@@ -58,3 +57,44 @@ body {
 	font-size: 21px;
 	padding: 0px 10px 10px 10px;
 }
+
+.footer {
+	width: 100%;
+	height: 40px;
+	padding: 5px 10px;
+	margin: 0px auto;
+	background-color: #eee;
+	border-top: 3px solid #d7dbdc;
+}
+
+.footer .content {
+	padding: 5px 10px;
+	margin: 0px auto;
+	width: 1060px;
+}
+
+.footer .content .github,
+.footer .content .github a {
+	float: left;
+	font-family: "helvetica",sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	color: #ec008c;
+	text-decoration: none;
+}
+
+.footer .content .copyright {
+	float: right;
+	font-family: "helvetica",sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	color: #ec008c;
+}
+
+.footer .content .copyright a {
+	color: #ec008c;
+	text-decoration: none;
+}
+
