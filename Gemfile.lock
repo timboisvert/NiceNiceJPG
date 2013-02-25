@@ -72,7 +72,7 @@ GEM
     rake (10.0.3)
     rdoc (3.12.1)
       json (~> 1.4)
-    rmagick (2.13.2)
+    rmagick (2.12.0)
     sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -94,5 +94,5 @@ PLATFORMS
 DEPENDENCIES
   jquery-rails
   rails (= 3.2.11)
-  rmagick
+  rmagick (= 2.12.0)
   uglifier (>= 1.0.3)
