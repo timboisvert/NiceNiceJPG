@@ -57,15 +57,11 @@ body {
 	margin-top: 20px;
 	font-size: 48px;
 	line-height: 48px;
-
 }
 
 .bottom .example {
-	background-color: #80d5f4;
-	color: #666;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-	border-radius: 7px;
+	background-color: #00aeef;
+	color: #eee;	
 }
 
 .bottom .example .header {
@@ -79,15 +75,17 @@ body {
 }
 
 .footer {
-	width: 100%;
+	padding: 19px 29px 29px;
+	margin: 0px auto 20px;
+	width: 1100px;
 	background-color: #eee;
-	border-top: 3px solid #333;
+	border-top: 3px solid #d7dbdc;
 }
 
 .footer .content {
-	padding: 19px 29px 29px;
-	margin: 0px auto 0px;
-	width: 1100px;
+	padding: 5px 10px;
+	margin: 0px auto;
+	width: 1060px;
 }
 
 .footer .content .github,
