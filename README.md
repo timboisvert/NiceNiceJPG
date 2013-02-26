@@ -1,4 +1,4 @@
-# Nice Nice JPG
+# NiceNiceJPG
 
 The only image placeholder service on the web bringing you nothing but Vanilla Ice jpgs. You're welcome.
 
