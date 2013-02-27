@@ -1,7 +1,14 @@
+require 'net/http'
+
 class NiceController < ApplicationController
   
   DEFAULT_FAMILY = "vanilla"
   SPECIAL_FAMILY = "5.0"
+  
+  def index
+    #call Onchilada
+    Thread.new{onchilada_homepage()}.join  
+  end
   
   def vanilla
     width = params[:width]
@@ -33,8 +40,15 @@ class NiceController < ApplicationController
   
   private 
   
+  def onchilada_homepage
+    Net::HTTP.get(URI.parse('http://api.onchilada.com/tick/homepage/nicenicejpg'))
+  end
+  
+  def onchilada_image
+    Net::HTTP.get(URI.parse('http://api.onchilada.com/tick/jpg/nicenicejpg'))
+  end
+  
   def handleimage(desiredWidth, desiredHeight, family)
-      
       #determine if landscape or portrait is being requested
       orientation = (desiredWidth.to_i >= desiredHeight.to_i) ? "landscape" : "portrait"
       
@@ -45,6 +59,9 @@ class NiceController < ApplicationController
       image = Magick::Image.read(File.expand_path("../../pics/#{family}/#{orientation}/#{pic}.jpg", __FILE__)).first
       image.resize_to_fill!(desiredWidth.to_i, desiredHeight.to_i)
       image_as_blob = image.to_blob { self.quality=50 }
+      
+      #call Onchilada
+      Thread.new{onchilada_image()}.join
       
       #set headers and send the data
       response.headers["Cache-Control"] = "max-age=31622400"
