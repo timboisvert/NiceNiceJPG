@@ -48,10 +48,12 @@ class NiceController < ApplicationController
     Net::HTTP.get(URI.parse('http://api.onchilada.com/tick/jpg/nicenicejpg'))
   end
   
-  def handleimage(w, h, family)
+  def handleimage(desiredWidth, desiredHeight, family)
     
-      desiredWidth = w.to_i > 1001 ? 1001 : w.to_i
-      desiredHeight = h.to_i > 1001 ? 1001 : h.to_i
+      desiredWidth = desiredWidth.to_i > 1001 ? 1001 : desiredWidth.to_i
+      desiredWidth = desiredWidth.to_i < 1 ? 1 : desiredWidth.to_i
+      desiredHeight = desiredHeight.to_i > 1001 ? 1001 : desiredHeight.to_i
+      desiredHeight = desiredHeight.to_i < 1 ? 1 : desiredHeight.to_i
       
       #determine if landscape or portrait is being requested
       orientation = (desiredWidth >= desiredHeight) ? "landscape" : "portrait"
