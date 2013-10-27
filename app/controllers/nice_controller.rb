@@ -38,6 +38,9 @@ class NiceController < ApplicationController
   
   private 
   
+  def do_nothing
+  end
+  
   def handleimage(desiredWidth, desiredHeight, family)
     
       desiredWidth = desiredWidth.to_i > 1001 ? 1001 : desiredWidth.to_i
