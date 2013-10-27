@@ -59,6 +59,11 @@ body {
 	padding: 10px 10px 5px 10px;
 }
 
+.bottom .example .header a {
+    text-decoration: none;
+    color: #ec008c;
+}
+
 .bottom .example .description {
 	font-size: 21px;
 	padding: 0px 10px 10px 10px;
