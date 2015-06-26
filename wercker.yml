@@ -1,7 +1,0 @@
-box: wercker/ruby
-build:
-    steps:
-        - bundle-install
-deploy:
-    steps:
-        - heroku-deploy
